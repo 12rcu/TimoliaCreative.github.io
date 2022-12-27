@@ -5,14 +5,14 @@
 Within the `Main.kt` is already an addon structure given and hints on what is possible.
 
 ````kotlin
-addon(
+addon({
     projectName = "TranClate Adventure",
     projectShort = "ta",
     description = "A adventure of discovering TranClate as great development tool",
     packIcon = getResource("general/pack.png"),
     world = getResource("world/template-world").modifyTemplateWorldName("Template"),
     version = arrayListOf(0, 0, 1)
-) {
+}) {
     
 }
 ````

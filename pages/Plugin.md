@@ -13,11 +13,11 @@ parts of the addon, the normal Minecraft developer should not see for complexity
 ## Exploiting Extension-functions
 
 If we want to write an accessible plugin for a developer we may want to use an extension-function 
-on the `SystemAddon` class. With that we can simply implement within the addon brackets
+on the `Addon` interface. With that we can simply implement within the addon brackets
 the additional functions of the plugin.
 
 ````kotlin
-fun SystemAddon.plane(data: Plane.() -> Unit) {
+fun Addon.plane(data: Plane.() -> Unit) {
     val plane = Plane().apply(data)
     //stuff
 }
